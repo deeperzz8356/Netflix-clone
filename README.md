@@ -1,4 +1,4 @@
-# Netflix-clone
+
 # Netflix Clone 🎬
 
 A responsive Netflix homepage clone built with HTML and CSS, featuring smooth animations and pixel-perfect design.
