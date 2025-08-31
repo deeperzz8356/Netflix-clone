@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        background: 	#1a1a1a;
+        color: #f0f0f0;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        color: #cf5813;
+    }
+
+    button {
+        background: peachpuff ;
+        color: #cf5813;
+        border: none;
+        padding: 15px 30px;
+        margin: 10px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+        background: #e29c1b;
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: scale(0.98);
+    }
+</style>
+
+<body>
+    <h3>Calculator</h3>
+    <p>
+        <button onclick="val(`1`)">1</button>
+
+        <button onclick="val(`2`)">2</button>
+
+        <button onclick="val(`3`)">3</button>
+
+        <button onclick="val(`+`)">+</button>
+
+    </p>
+    <p>
+        <button onclick="val(`4`)">4</button>
+        <button onclick="val(`5`)">5</button>
+
+        <button onclick="val(`6`)">6</button>
+
+        <button onclick="val(`-`)">-</button>
+
+    </p>
+    <p>
+        <button onclick="val(`7`)">7</button>
+
+        <button onclick="val(`8`)">8</button>
+
+        <button onclick="val(`9`)">9</button>
+
+        <button onclick="val(`*`)"">*</button>
+        
+    </p>
+    <p>
+        
+        
+        <button onclick=" sol()">=</button>
+        <button onclick="val(`0`)">0</button>
+        <button onclick="clr()">C</button>
+        <button onclick="val(`/`)">/</button>
+    </p>
+    <p>
+        
+
+        
+    </p>
+    <script>
+        let cal = ""
+        function val(a) {
+            cal=cal+a;
+        }
+        function clr() {
+            cal = ""
+            alert("Cleared");
+
+        }
+        function sol(){
+cal=eval(cal)
+alert(`Answer:${cal}`);
+cal=""
+    }
+    </script>
+
+
+
+
+</body>
+
+</html>
